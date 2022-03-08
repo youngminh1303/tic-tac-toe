@@ -27,22 +27,22 @@ section {
     background-color: #FF9E9E;
     height: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding-bottom: 2rem;
+    justify-content: space-evenly;
     
 }
 .gameBoard {
     display: grid;
-    width: 300px;
-    margin: auto;
+    max-width: min-content;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
 }
 
 .square {
     width: 100px;
-    border: 1px solid #FFF5CC;
+    border: 3px solid #FFF5CC;
     color: white;
     height: 100px;
     display: flex;
@@ -86,4 +86,16 @@ footer {
     width: 80%;
     height: 2rem;
     padding: 0.5rem;
+}
+
+.info {
+    max-width: max-content;
+    color: #FFF5CC;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
 }
